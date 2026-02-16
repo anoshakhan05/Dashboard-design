@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Analytics</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="material-icons-round logo-icon">dashboard</span>
+                    <h1>Aura</h1>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-icons-round">grid_view</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="analytics.html">
+                            <span class="material-icons-round">analytics</span>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customers.html">
+                            <span class="material-icons-round">people</span>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <span class="material-icons-round">inventory_2</span>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <span class="material-icons-round">receipt_long</span>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="material-icons-round">settings</span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=6c5ce7&color=fff" alt="User"
+                        class="user-avatar">
+                    <div class="user-info">
+                        <h4>Jane Doe</h4>
+                        <p>Project Admin</p>
+                    </div>
+                    <button class="logout-btn">
+                        <span class="material-icons-round">logout</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h2>Analytics</h2>
+                    <p class="date-display">Performance metrics & insights</p>
+                </div>
+
+                <div class="header-right">
+                    <div class="date-range-picker">
+                        <span class="material-icons-round">calendar_today</span>
+                        <span>Oct 1 - Oct 24, 2024</span>
+                        <span class="material-icons-round">expand_more</span>
+                    </div>
+
+                    <button class="icon-btn notification-btn">
+                        <span class="material-icons-round">notifications</span>
+                        <span class="badge">3</span>
+                    </button>
+
+                    <button class="theme-toggle">
+                        <span class="material-icons-round">dark_mode</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Analytics Content -->
+            <div class="dashboard-grid">
+                <!-- KPI Cards (Row 1) -->
+                <div class="card stat-card">
+                    <div class="stat-info">
+                        <p>Unique Visitors</p>
+                        <h3>124.5k</h3>
+                        <div class="progress-mini">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card stat-card">
+                    <div class="stat-info">
+                        <p>Avg. Time on Page</p>
+                        <h3>4m 32s</h3>
+                        <div class="progress-mini">
+                            <div class="progress-bar success" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card stat-card">
+                    <div class="stat-info">
+                        <p>Bounce Rate</p>
+                        <h3>42.8%</h3>
+                        <div class="progress-mini">
+                            <div class="progress-bar warning" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card stat-card">
+                    <div class="stat-info">
+                        <p>Conversion Rate</p>
+                        <h3>3.2%</h3>
+                        <div class="progress-mini">
+                            <div class="progress-bar danger" style="width: 25%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Traffic Chart (Row 2) -->
+                <div class="card chart-section full-width">
+                    <div class="card-header">
+                        <h3>Traffic Sources</h3>
+                        <div class="legend">
+                            <span class="dot direct"></span> Direct
+                            <span class="dot social"></span> Social
+                            <span class="dot organic"></span> Organic
+                        </div>
+                    </div>
+                    <div class="chart-container custom-graph">
+                        <!-- Simulated Wave/Line Chart using CSS Clip Path/SVG -->
+                        <svg viewBox="0 0 1000 300" class="wave-chart" preserveAspectRatio="none">
+                            <!-- Gradient Defs -->
+                            <defs>
+                                <linearGradient id="gradientPrimary" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="var(--accent-primary)" stop-opacity="0.5" />
+                                    <stop offset="100%" stop-color="var(--accent-primary)" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Path for Area -->
+                            <path d="M0,250 C150,200 350,280 500,150 C650,20 850,100 1000,50 L1000,300 L0,300 Z"
+                                fill="url(#gradientPrimary)" />
+
+                            <!-- Path for Line -->
+                            <path d="M0,250 C150,200 350,280 500,150 C650,20 850,100 1000,50" fill="none"
+                                stroke="var(--accent-primary)" stroke-width="4" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Split View (Row 3) -->
+                <div class="card" style="grid-column: span 2;">
+                    <div class="card-header">
+                        <h3>User Devices</h3>
+                    </div>
+                    <div class="device-stats">
+                        <div class="device-item">
+                            <span class="material-icons-round">desktop_mac</span>
+                            <div class="device-track">
+                                <div class="device-fill" style="width: 55%"></div>
+                            </div>
+                            <span>55%</span>
+                        </div>
+                        <div class="device-item">
+                            <span class="material-icons-round">smartphone</span>
+                            <div class="device-track">
+                                <div class="device-fill" style="width: 35%"></div>
+                            </div>
+                            <span>35%</span>
+                        </div>
+                        <div class="device-item">
+                            <span class="material-icons-round">tablet</span>
+                            <div class="device-track">
+                                <div class="device-fill" style="width: 10%"></div>
+                            </div>
+                            <span>10%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="grid-column: span 2;">
+                    <div class="card-header">
+                        <h3>Top Locations</h3>
+                    </div>
+                    <div class="location-list">
+                        <div class="location-item">
+                            <span class="flag">🇺🇸</span>
+                            <span>United States</span>
+                            <span class="count">24k</span>
+                        </div>
+                        <div class="location-item">
+                            <span class="flag">🇩🇪</span>
+                            <span>Germany</span>
+                            <span class="count">12k</span>
+                        </div>
+                        <div class="location-item">
+                            <span class="flag">🇬🇧</span>
+                            <span>United Kingdom</span>
+                            <span class="count">8.5k</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

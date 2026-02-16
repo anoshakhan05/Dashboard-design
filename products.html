@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Products</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="material-icons-round logo-icon">dashboard</span>
+                    <h1>Aura</h1>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-icons-round">grid_view</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">
+                            <span class="material-icons-round">analytics</span>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customers.html"> <!-- Placeholder -->
+                            <span class="material-icons-round">people</span>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="products.html">
+                            <span class="material-icons-round">inventory_2</span>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <span class="material-icons-round">receipt_long</span>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="material-icons-round">settings</span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=6c5ce7&color=fff" alt="User"
+                        class="user-avatar">
+                    <div class="user-info">
+                        <h4>Jane Doe</h4>
+                        <p>Project Admin</p>
+                    </div>
+                    <button class="logout-btn">
+                        <span class="material-icons-round">logout</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h2>Products</h2>
+                    <p class="date-display">Manage your inventory</p>
+                </div>
+
+                <div class="header-right">
+                    <button class="primary-btn">
+                        <span class="material-icons-round">add</span>
+                        Add Product
+                    </button>
+
+                    <button class="icon-btn notification-btn">
+                        <span class="material-icons-round">notifications</span>
+                        <span class="badge">3</span>
+                    </button>
+
+                    <button class="theme-toggle">
+                        <span class="material-icons-round">dark_mode</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Products Content -->
+            <div class="table-container card">
+                <!-- Toolbar -->
+                <div class="table-toolbar">
+                    <div class="search-bar">
+                        <span class="material-icons-round">search</span>
+                        <input type="text" placeholder="Search products...">
+                    </div>
+
+                    <div class="filter-actions">
+                        <button class="filter-btn">
+                            <span class="material-icons-round">filter_list</span>
+                            Filter
+                        </button>
+                        <button class="filter-btn">
+                            <span class="material-icons-round">download</span>
+                            Export
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-cell"><input type="checkbox"></th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=PROD&background=2c3e50&color=fff&size=40"
+                                            alt="img">
+                                        <div>
+                                            <h4>Premium Watch</h4>
+                                            <span>#SKU-9023</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Accessories</td>
+                                <td>$250.00</td>
+                                <td>45</td>
+                                <td><span class="status-badge active">In Stock</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">edit</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=PROD&background=e74c3c&color=fff&size=40"
+                                            alt="img">
+                                        <div>
+                                            <h4>Leather Bag</h4>
+                                            <span>#SKU-9024</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Fashion</td>
+                                <td>$120.00</td>
+                                <td>12</td>
+                                <td><span class="status-badge warning">Low Stock</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">edit</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=PROD&background=f1c40f&color=fff&size=40"
+                                            alt="img">
+                                        <div>
+                                            <h4>Wireless Headset</h4>
+                                            <span>#SKU-9025</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Electronics</td>
+                                <td>$89.99</td>
+                                <td>0</td>
+                                <td><span class="status-badge danger">Out of Stock</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">edit</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=PROD&background=3498db&color=fff&size=40"
+                                            alt="img">
+                                        <div>
+                                            <h4>Smart Speaker</h4>
+                                            <span>#SKU-9026</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Electronics</td>
+                                <td>$149.50</td>
+                                <td>150</td>
+                                <td><span class="status-badge active">In Stock</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">edit</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">delete</span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="table-footer">
+                    <p>Showing <strong>1-4</strong> of <strong>56</strong> products</p>
+                    <div class="pagination">
+                        <button disabled><span class="material-icons-round">chevron_left</span></button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button><span class="material-icons-round">chevron_right</span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
