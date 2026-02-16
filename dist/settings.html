@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Settings</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <link rel="stylesheet" crossorigin href="/assets/style-Kk-mNPGG.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="material-icons-round logo-icon">dashboard</span>
+                    <h1>Aura</h1>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-icons-round">grid_view</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">
+                            <span class="material-icons-round">analytics</span>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customers.html"> <!-- Placeholder -->
+                            <span class="material-icons-round">people</span>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <span class="material-icons-round">inventory_2</span>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <span class="material-icons-round">receipt_long</span>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="settings.html">
+                            <span class="material-icons-round">settings</span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=6c5ce7&color=fff" alt="User"
+                        class="user-avatar">
+                    <div class="user-info">
+                        <h4>Jane Doe</h4>
+                        <p>Project Admin</p>
+                    </div>
+                    <button class="logout-btn">
+                        <span class="material-icons-round">logout</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h2>Settings</h2>
+                    <p class="date-display">Manage account & preferences</p>
+                </div>
+
+                <div class="header-right">
+                    <button class="icon-btn notification-btn">
+                        <span class="material-icons-round">notifications</span>
+                        <span class="badge">3</span>
+                    </button>
+
+                    <button class="theme-toggle">
+                        <span class="material-icons-round">dark_mode</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Settings Content -->
+            <div class="settings-container">
+                <!-- Navigation Tabs (Simulated) -->
+                <div class="settings-tabs">
+                    <button class="tab-btn active">General</button>
+                    <button class="tab-btn">Security</button>
+                    <button class="tab-btn">Notifications</button>
+                    <button class="tab-btn">Team</button>
+                </div>
+
+                <div class="settings-grid">
+                    <!-- Profile Card -->
+                    <div class="card profile-card">
+                        <div class="profile-header">
+                            <div class="profile-image-container">
+                                <img src="https://ui-avatars.com/api/?name=Jane+Doe&background=6366f1&color=fff&size=200"
+                                    alt="profile">
+                                <button class="edit-avatar-btn"><span class="material-icons-round">edit</span></button>
+                            </div>
+                            <h3>Jane Doe</h3>
+                            <p>Senior Administrator</p>
+                        </div>
+                        <div class="profile-body">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" value="Jane Doe">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" value="jane.doe@aura.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Bio</label>
+                                <textarea rows="3">Experiencing the future of dashboard management.</textarea>
+                            </div>
+                            <button class="primary-btn full-width-btn">Save Changes</button>
+                        </div>
+                    </div>
+
+                    <!-- Preferences -->
+                    <div class="card preferences-card">
+                        <div class="card-header">
+                            <h3>Preferences</h3>
+                        </div>
+
+                        <div class="preference-section">
+                            <h4>Appearance</h4>
+                            <div class="toggle-row">
+                                <div class="toggle-info">
+                                    <span>Dark Mode</span>
+                                    <p>Use dark theme across the application</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="toggle-row">
+                                <div class="toggle-info">
+                                    <span>Sidebar Collapsed</span>
+                                    <p>Start with sidebar minimized</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="toggle-row">
+                                <div class="toggle-info">
+                                    <span>Antigravity Mode 🪐</span>
+                                    <p>Experimental: Enable physics engine</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" id="antigravity-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+
+                        <div class="preference-section">
+                            <h4>Notifications</h4>
+                            <div class="toggle-row">
+                                <div class="toggle-info">
+                                    <span>Email Notifications</span>
+                                    <p>Receive daily summaries</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="toggle-row">
+                                <div class="toggle-info">
+                                    <span>Push Notifications</span>
+                                    <p>Real-time alerts on desktop</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+
+                        <div class="preference-section">
+                            <h4>Security</h4>
+                            <div class="toggle-row">
+                                <div class="toggle-info">
+                                    <span>Two-Factor Authentication</span>
+                                    <p>Add an extra layer of security</p>
+                                </div>
+                                <button class="secondary-btn">Enable</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

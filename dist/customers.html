@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Customers</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <link rel="stylesheet" crossorigin href="/assets/style-Kk-mNPGG.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="material-icons-round logo-icon">dashboard</span>
+                    <h1>Aura</h1>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="material-icons-round">grid_view</span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">
+                            <span class="material-icons-round">analytics</span>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="customers.html">
+                            <span class="material-icons-round">people</span>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <span class="material-icons-round">inventory_2</span>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <span class="material-icons-round">receipt_long</span>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="material-icons-round">settings</span>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-card">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=6c5ce7&color=fff" alt="User"
+                        class="user-avatar">
+                    <div class="user-info">
+                        <h4>Jane Doe</h4>
+                        <p>Project Admin</p>
+                    </div>
+                    <button class="logout-btn">
+                        <span class="material-icons-round">logout</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h2>Customers</h2>
+                    <p class="date-display">Manage user relationships</p>
+                </div>
+
+                <div class="header-right">
+                    <div class="search-bar">
+                        <span class="material-icons-round">search</span>
+                        <input type="text" placeholder="Search customers...">
+                    </div>
+
+                    <button class="icon-btn notification-btn">
+                        <span class="material-icons-round">notifications</span>
+                        <span class="badge">3</span>
+                    </button>
+
+                    <button class="theme-toggle">
+                        <span class="material-icons-round">dark_mode</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Customers Content -->
+            <div class="table-container card">
+                <!-- Toolbar -->
+                <div class="table-toolbar">
+                    <h3>Customer Database</h3>
+                    <div class="filter-actions">
+                        <button class="filter-btn">
+                            <span class="material-icons-round">filter_list</span>
+                            Filter
+                        </button>
+                        <button class="primary-btn">
+                            <span class="material-icons-round">person_add</span>
+                            Add Customer
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-cell"><input type="checkbox"></th>
+                                <th>Customer</th>
+                                <th>Email</th>
+                                <th>Location</th>
+                                <th>Orders</th>
+                                <th>Total Spent</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=Alex+M&background=random&color=fff"
+                                            alt="img" class="user-avatar-sm">
+                                        <div>
+                                            <h4>Alex Morgan</h4>
+                                            <span>Member since 2023</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>alex.m@example.com</td>
+                                <td>New York, USA</td>
+                                <td>14</td>
+                                <td>$1,240.00</td>
+                                <td><span class="status-badge active">Active</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">mail</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">block</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=Sarah+J&background=random&color=fff"
+                                            alt="img" class="user-avatar-sm">
+                                        <div>
+                                            <h4>Sarah Johnson</h4>
+                                            <span>Member since 2024</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>sarah.j@example.com</td>
+                                <td>London, UK</td>
+                                <td>3</td>
+                                <td>$250.50</td>
+                                <td><span class="status-badge active">Active</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">mail</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">block</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=Mike+T&background=random&color=fff"
+                                            alt="img" class="user-avatar-sm">
+                                        <div>
+                                            <h4>Mike Tyson</h4>
+                                            <span>Member since 2022</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>mike.t@example.com</td>
+                                <td>Berlin, Germany</td>
+                                <td>0</td>
+                                <td>$0.00</td>
+                                <td><span class="status-badge warning">Inactive</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">mail</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">block</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=Emma+W&background=random&color=fff"
+                                            alt="img" class="user-avatar-sm">
+                                        <div>
+                                            <h4>Emma Watson</h4>
+                                            <span>Member since 2023</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>emma.w@example.com</td>
+                                <td>Paris, France</td>
+                                <td>24</td>
+                                <td>$3,450.00</td>
+                                <td><span class="status-badge active">VIP</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">mail</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">block</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-cell"><input type="checkbox"></td>
+                                <td>
+                                    <div class="product-cell">
+                                        <img src="https://ui-avatars.com/api/?name=David+L&background=random&color=fff"
+                                            alt="img" class="user-avatar-sm">
+                                        <div>
+                                            <h4>David Lee</h4>
+                                            <span>Member since 2024</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>david.l@example.com</td>
+                                <td>Toronto, Canada</td>
+                                <td>1</td>
+                                <td>$45.00</td>
+                                <td><span class="status-badge danger">Blocked</span></td>
+                                <td>
+                                    <button class="action-btn"><span class="material-icons-round">mail</span></button>
+                                    <button class="action-btn delete"><span
+                                            class="material-icons-round">block</span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="table-footer">
+                    <p>Showing <strong>1-5</strong> of <strong>1,240</strong> customers</p>
+                    <div class="pagination">
+                        <button disabled><span class="material-icons-round">chevron_left</span></button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>...</button>
+                        <button>12</button>
+                        <button><span class="material-icons-round">chevron_right</span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
